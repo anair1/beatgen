@@ -8,7 +8,7 @@
 opt -s 44100
 opt -f
 opt -EFresamp=L
-opt -EFreverb=4,21
+opt -EFreverb=0
 opt -EFns=0
 opt -m 3000
 opt -p 256
