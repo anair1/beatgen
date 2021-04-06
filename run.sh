@@ -6,4 +6,6 @@ python bassgen.py
 timidity bass.mid -Ow -o bass.wav
 echo "Done. Combining..."
 python wavmix.py
-echo "Done. Output file is ready."
+mv output.wav bin
+echo "Done. Output file is in bin directory."
+rm drums.* bass.*
