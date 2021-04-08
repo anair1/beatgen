@@ -1,10 +1,10 @@
 from midiutil.MidiFile import MIDIFile
 import numpy as np
 from random import randint
-from os import listdir
+import os
 
 timidity_dir = '/usr/local/Cellar/timidity/2.15.0_1/share/timidity/timidity.cfg'
-soundfonts_dir = "/Users/amansingh/beatgen/soundfonts"
+soundfonts_dir = f'{os.path.realpath(__file__)}/soundfonts'
 drums_lines = {'hihatop':58,
                'snare1':51,
                'snare2':52,
@@ -12,8 +12,8 @@ drums_lines = {'hihatop':58,
                'kick2':49}
 # bass_line = 31
 hihatcl_line = 31
-hihatcl_sf = [f for f in listdir(f'{soundfonts_dir}/hihatcl') if f.endswith('sf2')]
-drums_sf = [f for f in listdir(f'{soundfonts_dir}/drums') if f.endswith('sf2')]
+hihatcl_sf = [f for f in os.listdir(f'{soundfonts_dir}/hihatcl') if f.endswith('sf2')]
+drums_sf = [f for f in os.listdir(f'{soundfonts_dir}/drums') if f.endswith('sf2')]
 # bass_sf = [f for f in listdir(f'{soundfonts_dir}/bass') if f.endswith('sf2')]
 
 cfg_file = open(timidity_dir)
