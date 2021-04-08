@@ -2,7 +2,7 @@ from random import randint
 from os import listdir
 
 timidity_dir = '/usr/local/Cellar/timidity/2.15.0_1/share/timidity/timidity.cfg'
-soundfonts_dir = "/Users/amansingh/beatgen/soundfonts"
+soundfonts_dir = "/Users/arjunnair/Documents/Github/soundfonts"
 drums_lines = {'hihatcl':54,
                'hihatop':58,
                'snare1':51,

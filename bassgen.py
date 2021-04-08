@@ -3,7 +3,7 @@ from random import randint
 from midiutil.MidiFile import MIDIFile
 import numpy as np
 
-soundfonts_dir = "/Users/amansingh/beatgen/soundfonts"
+soundfonts_dir = "/Users/arjunnair/Documents/Github/beatgen/soundfonts"
 bass_sf = [f for f in listdir(f'{soundfonts_dir}/bass') if f.endswith('sf2')]
 bass_line = 31
 timidity_dir = '/usr/local/Cellar/timidity/2.15.0_1/share/timidity/timidity.cfg'
